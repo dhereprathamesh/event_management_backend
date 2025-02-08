@@ -16,13 +16,7 @@ connectDB();
 const app = express();
 const server = http.createServer(app);
 
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-  })
-);
+app.use(cors());
 
 // Initialize Socket.IO
 const io = new Server(server, {
