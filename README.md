@@ -1,1 +1,1 @@
-# event_management_backend
+# eventManageApp
